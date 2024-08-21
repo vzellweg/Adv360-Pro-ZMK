@@ -37,7 +37,7 @@
         compatible = "zmk,combos";
 
         doubleShift {
-            bindings = <&caps_word>;
+            bindings = <&kp CAPS>;
             key-positions = <46 59>;
         };
     };
@@ -50,7 +50,7 @@
 &kp EQUAL  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5  &tog 1                                                                  &mo 3      &kp N6  &kp N7      &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W      &kp E             &kp R              &kp T   &bl BL_CYCLE                                                            &none      &kp Y   &kp U       &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S      &kp D             &kp F              &kp G   &none         &kp LEFT_COMMAND  &kp LEFT_ALT      &kp RGUI   &kp RCTRL  &none      &kp H   &kp J       &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C             &kp V              &kp B                                   &kp HOME          &kp PG_UP                        &kp N   &kp M       &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
+&kp LSHFT  &kp Z      &kp X      &kp C             &kp V              &kp B                                   &kp LSHIFT        &kp PG_UP                        &kp N   &kp M       &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
 &mo 2      &kp LCTRL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp BSPC      &kp DELETE        &kp END           &kp PG_DN  &kp ENTER  &kp SPACE          &kp RSHIFT  &kp SLASH  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
