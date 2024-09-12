@@ -68,11 +68,6 @@
             bindings = <&kp CAPS>;
             key-positions = <46 59>;
         };
-
-        workspace_1 {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <20>;
-        };
     };
 
     keymap {
