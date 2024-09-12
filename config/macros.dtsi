@@ -34,3 +34,31 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
+
+  workspace_1: workspace_1 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LA(NUMBER_1)>;
+      label = "workspace_1";
+  };
+
+  workspace_2: workspace_2 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LA(NUMBER_2)>;
+      label = "workspace_2";
+  };
+
+  workspace_3: workspace_3 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LA(NUMBER_3)>;
+      label = "workspace_3";
+  };
+
+  workspace_4: workspace_4 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LA(NUMBER_4)>;
+      label = "workspace_4";
+  };
