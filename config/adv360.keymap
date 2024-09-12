@@ -17,6 +17,34 @@
             bindings = <&kp RET>;
         };
 
+        workspace_1: workspace_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_1)>;
+            label = "WORKSPACE_1";
+        };
+
+        workspace_2: workspace_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_2)>;
+            label = "WORKSPACE_2";
+        };
+
+        workspace_3: workspace_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_3)>;
+            label = "WORKSPACE_3";
+        };
+
+        workspace_4: workspace_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_4)>;
+            label = "WORKSPACE_4";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -47,11 +75,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5  &tog 1                                                                  &mo 3      &kp N6  &kp N7    &kp N8     &kp N9   &kp N0     &kp MINUS
-&kp TAB    &kp Q      &kp W      &kp E             &kp R              &kp T   &bl BL_CYCLE                                                            &none      &kp Y   &kp U     &kp I      &kp O    &kp P      &kp BSLH
-&kp ESC    &kp A      &kp S      &kp D             &kp F              &kp G   &none         &kp LEFT_COMMAND  &kp LEFT_ALT      &kp RGUI   &kp RCTRL  &none      &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C             &kp V              &kp B                                   &kp LSHIFT        &kp PG_UP                        &kp N   &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-&mo 2      &kp LCTRL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp BSPC      &kp DELETE        &kp END           &kp PG_DN  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &mo 2
+&kp EQUAL  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5  &tog 1                                                                  &mo 3         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB    &kp Q      &kp W      &kp E             &kp R              &kp T   &workspace_1                                                            &workspace_3  &kp Y   &kp U     &kp I      &kp O    &kp P      &kp BSLH
+&kp ESC    &kp A      &kp S      &kp D             &kp F              &kp G   &workspace_2  &kp LEFT_COMMAND  &kp LEFT_ALT      &kp RGUI   &kp RCTRL  &workspace_4  &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z      &kp X      &kp C             &kp V              &kp B                                   &kp LSHIFT        &kp PG_UP                           &kp N   &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
+&mo 2      &kp LCTRL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp BSPC      &kp DELETE        &kp END           &kp PG_DN  &kp ENTER  &kp SPACE             &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &mo 2
             >;
         };
 
@@ -77,11 +105,11 @@
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                   &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                             &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bl BL_CYCLE  &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                              &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none         &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
