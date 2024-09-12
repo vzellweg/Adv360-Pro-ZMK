@@ -17,18 +17,17 @@
             bindings = <&kp RET>;
         };
 
-        workspace_1: workspace_1 {
+        workspace1: workspace1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_1)>, <&macro_press>;
-
-            label = "WORKSPACE_1";
+            bindings = <&kp LA(NUMBER_1)>;
+            label = "WORKSPACE1";
         };
 
         workspace2: workspace2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(NUMBER_2)>;
+            bindings = <&kp NUMBER_2>;
             label = "WORKSPACE2";
         };
 
